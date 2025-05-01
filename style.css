@@ -1,0 +1,153 @@
+/* colors: #03045E, #023E8A, #0077B6, #CAF0F8, #90E0EF  */
+
+body {
+    padding-top: 70px;
+}
+
+.hero-heading {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+    font-size: 10vw;
+    /* Huge size that scales with screen */
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-container {
+    height: 100vh;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Navbar reveal on scroll */
+.navbar {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.navbar.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+a.nav-link,
+a.nav-link:hover,
+a.nav-link:focus,
+a.nav-link:active,
+.nav-link.active {
+    text-decoration: none !important;
+    /* Force removal */
+}
+
+a.nav-link {
+    color: #F8B822;
+    font-size: large;
+    transition: color 0.3s ease-in-out;
+}
+
+a.nav-link:hover {
+    color: #F8B822 !important;
+    /* Gold hover */
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+}
+
+a.nav-link:hover {
+    color: #142F56 !important;
+    /* Deep navy text */
+    background-color: #F8B822 !important;
+    /* Gold background */
+    text-decoration: none !important;
+}
+
+/* Active link style */
+.nav-link.active {
+    color: #142F56 !important;
+    /* Deep navy text */
+    background-color: #F8B822;
+    border-bottom: none;
+    text-decoration: none !important;
+}
+
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+/* Custom nav toggle button */
+.custom-toggler {
+    position: relative;
+    width: 50px;
+    /* Larger button */
+    height: 50px;
+    border: 2px solid #F8B822;
+    border-radius: 8px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom toggle icon lines */
+.custom-toggler .line {
+    display: block;
+    width: 30px;
+    /* Ensure proper width */
+    height: 4px;
+    /* Slightly thinner for balance */
+    background-color: #F8B822;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Position each line */
+.custom-toggler .line:nth-child(1) {
+    top: 14px;
+}
+
+.custom-toggler .line:nth-child(2) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.custom-toggler .line:nth-child(3) {
+    bottom: 14px;
+}
+
+/* Keep X centered and proportional */
+.custom-toggler[aria-expanded="true"] .line:nth-child(1) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.custom-toggler[aria-expanded="true"] .line:nth-child(2) {
+    opacity: 0;
+}
+
+.custom-toggler[aria-expanded="true"] .line:nth-child(3) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
