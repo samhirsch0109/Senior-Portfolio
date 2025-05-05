@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    scroll-behavior: smooth;
+
 }
 
 /* Hero Section */
@@ -8,31 +10,57 @@ body {
     background: linear-gradient(to right, #8755e4, #7f00b6);
     color: white;
     display: flex;
+    font-weight: 900px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .hero-heading {
+    font-size: 20vw;
+    /* Increase this for a bolder look, e.g., 12vw or use px for exact size */
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    /* Optional: adds a subtle shadow */
+    letter-spacing: 12px;
     opacity: 0;
     transform: translateY(50px);
     animation: fadeSlideIn 1s ease-out forwards;
     animation-delay: 0.3s;
-    font-size: 10vw;
-    font-weight: 900;
-    letter-spacing: 15px;
 }
+
+
+.hero-arrow,
+.hero-arrow:link,
+.hero-arrow:visited,
+.hero-arrow:hover,
+.hero-arrow:focus,
+.hero-arrow:active {
+    text-decoration: none !important;
+}
+
 
 .hero-arrow {
     opacity: 0;
     transform: translateY(20px);
     animation: arrowFadeSlideIn 1s ease-out forwards;
     animation-delay: 1.4s;
-    font-size: 4vw;
+    font-size: 8vw;
+    /* Increased from 8vw for a bigger arrow */
     cursor: pointer;
     color: white;
     transition: transform 0.3s ease;
+    text-decoration: none !important;
+    display: inline-block;
+    line-height: 1;
+    margin-top: 1rem;
+    /* Optional: space it from the heading above */
 }
+
 
 .hero-arrow:hover {
     transform: translateY(10px);
@@ -57,6 +85,15 @@ body {
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity 0.4s ease, transform 0.4s ease;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand p {
+    margin: 0;
+    font-weight: 700;
+    color: #007bff;
+
 }
 
 .navbar.show {
@@ -67,7 +104,7 @@ body {
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
     color: #142f56;
-    background-color: #f8b822;
+    background-color: #2d22f8;
     border-radius: 5px;
 }
 
@@ -75,7 +112,7 @@ body {
 .custom-toggler {
     width: 50px;
     height: 50px;
-    border: 2px solid #f8b822;
+    border: 2px solid #0039b4;
     border-radius: 8px;
     background: transparent;
     display: flex;
@@ -87,7 +124,7 @@ body {
 .custom-toggler .line {
     width: 30px;
     height: 4px;
-    background-color: #f8b822;
+    background-color: #225bf8;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -124,9 +161,14 @@ body {
 
 /* Intro Section */
 .intro-section {
-    background-color: #CAF0F8;
+    background-color: #e9f5f7;
     color: #03045E;
     padding: 100px 0;
+}
+
+.intro-section,
+.welcome-section {
+    padding: 4rem 0;
 }
 
 .intro-section h2 {
@@ -142,11 +184,12 @@ body {
 
 /* Welcome Section */
 .welcome-section .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    top: -50px;
 }
 
 .welcome-section .text-col {
@@ -188,17 +231,6 @@ body {
     animation-delay: 0.6s;
 }
 
-.hero-arrow {
-    font-size: 3vw;
-    margin-top: 40px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideIn 1s ease-out forwards;
-    animation-delay: 1.2s;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
 .hero-arrow:hover {
     transform: translateY(10px);
 }
@@ -212,7 +244,7 @@ body {
 
 /* Intro Section */
 .intro-section {
-    background-color: #CAF0F8;
+    background-color: #e5f0f3;
     color: #03045E;
     padding: 100px 0;
 }
@@ -240,5 +272,75 @@ body {
     .text-col {
         margin-top: 20px;
         text-align: center;
+    }
+}
+
+.project-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.project-container:hover {
+    transform: scale(1.03);
+}
+
+.project-image {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-container:hover .overlay {
+    opacity: 1;
+}
+
+.parallax-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.parallax-item {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .parallax-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .parallax-grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,0 +1,76 @@
+[
+    {
+      "title": "Adobe Photoshop Projects",
+      "modalTitle": "Adobe Photoshop",
+      "bgImage": "https://picsum.photos/200/300",
+      "images": [
+        "https://picsum.photos/id/1011/800/400",
+        "https://picsum.photos/id/1012/800/400",
+        "https://picsum.photos/id/1013/800/400"
+      ]
+    },
+    {
+      "title": "Logos",
+      "modalTitle": "Logos",
+      "bgImage": "https://picsum.photos/200/300",
+      "images": [ "https://picsum.photos/id/1011/800/400",
+      "https://picsum.photos/id/1012/800/400",
+      "https://picsum.photos/id/1013/800/400"]
+    },
+    {
+        "title": "Logos",
+        "modalTitle": "Logos",
+        "bgImage": "https://picsum.photos/200/300",
+        "images": [ "https://picsum.photos/id/1011/800/400",
+        "https://picsum.photos/id/1012/800/400",
+        "https://picsum.photos/id/1013/800/400"]
+    },
+    {
+        "title": "Logos",
+        "modalTitle": "Logos",
+        "bgImage": "https://picsum.photos/200/300",
+        "images": [ "https://picsum.photos/id/1011/800/400",
+        "https://picsum.photos/id/1012/800/400",
+        "https://picsum.photos/id/1013/800/400"]
+    },
+    {
+    "title": "Logos",
+    "modalTitle": "Logos",
+    "bgImage": "https://picsum.photos/200/300",
+    "images": [ "https://picsum.photos/id/1011/800/400",
+    "https://picsum.photos/id/1012/800/400",
+    "https://picsum.photos/id/1013/800/400"]
+}, {
+    "title": "Logos",
+    "modalTitle": "Logos",
+    "bgImage": "https://picsum.photos/200/300",
+    "images": [ "https://picsum.photos/id/1011/800/400",
+    "https://picsum.photos/id/1012/800/400",
+    "https://picsum.photos/id/1013/800/400"]
+},
+{
+"title": "Logos",
+"modalTitle": "Logos",
+"bgImage": "https://picsum.photos/200/300",
+"images": [ "https://picsum.photos/id/1011/800/400",
+"https://picsum.photos/id/1012/800/400",
+"https://picsum.photos/id/1013/800/400"]
+},
+{
+    "title": "Logos",
+    "modalTitle": "Logos",
+    "bgImage": "https://picsum.photos/200/300",
+    "images": [ "https://picsum.photos/id/1011/800/400",
+    "https://picsum.photos/id/1012/800/400",
+    "https://picsum.photos/id/1013/800/400"]
+    },
+    {
+        "title": "Logos",
+        "modalTitle": "Logos",
+        "bgImage": "https://picsum.photos/200/300",
+        "images": [ "https://picsum.photos/id/1011/800/400",
+        "https://picsum.photos/id/1012/800/400",
+        "https://picsum.photos/id/1013/800/400"]
+        }
+  ]
+  
