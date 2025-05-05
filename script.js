@@ -1,23 +1,25 @@
-const navbar = document.querySelector(".navbar");
-const heroHeading = document.querySelector(".hero-heading");
+$(document).ready(function () {
+    // Lock scroll until animation ends
+    $("body").css("overflow", "hidden");
+    setTimeout(() => $("body").css("overflow", "auto"), 2500);
 
-// Show navbar when hero is out of view
-const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-                navbar.classList.add("show");
-            } else {
-                navbar.classList.remove("show");
-            }
-        });
-    },
-    { threshold: 0.1 }
-);
+    // Show navbar after scrolling past the #intro section
+    const introOffset = $("#intro").offset().top + 50; // triggers earlier
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > introOffset - 100) {
+            $(".navbar").addClass("show");
+        } else {
+            $(".navbar").removeClass("show");
+        }
+    });
 
-observer.observe(heroHeading);
-
-// Trigger animation manually after load (in case CSS delay fails)
-window.addEventListener("DOMContentLoaded", () => {
-    heroHeading.style.animationPlayState = 'running';
+    // Smooth scroll
+    $(".hero-arrow-link").on("click", function (e) {
+        e.preventDefault();
+        const target = $($(this).attr("href"));
+        if (target.length) {
+            $("html, body").animate({ scrollTop: target.offset().top }, 800);
+        }
+    });
 });
+

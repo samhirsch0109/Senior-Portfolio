@@ -1,7 +1,16 @@
-/* colors: #03045E, #023E8A, #0077B6, #CAF0F8, #90E0EF  */
-
 body {
-    padding-top: 70px;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero-container {
+    height: 100vh;
+    background: linear-gradient(to right, #8755e4, #7f00b6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-heading {
@@ -10,9 +19,23 @@ body {
     animation: fadeSlideIn 1s ease-out forwards;
     animation-delay: 0.3s;
     font-size: 10vw;
-    /* Huge size that scales with screen */
     font-weight: 900;
     letter-spacing: 15px;
+}
+
+.hero-arrow {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: arrowFadeSlideIn 1s ease-out forwards;
+    animation-delay: 1.4s;
+    font-size: 4vw;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.hero-arrow:hover {
+    transform: translateY(10px);
 }
 
 @keyframes fadeSlideIn {
@@ -22,17 +45,14 @@ body {
     }
 }
 
-.hero-container {
-    height: 100vh;
-    background: linear-gradient(to right, #4e54c8, #8f94fb);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@keyframes arrowFadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Navbar reveal on scroll */
+/* Navbar hidden initially */
 .navbar {
     opacity: 0;
     transform: translateY(-100%);
@@ -44,86 +64,37 @@ body {
     transform: translateY(0);
 }
 
-
-
-a.nav-link,
-a.nav-link:hover,
-a.nav-link:focus,
-a.nav-link:active,
-.nav-link.active {
-    text-decoration: none !important;
-    /* Force removal */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #142f56;
+    background-color: #f8b822;
+    border-radius: 5px;
 }
 
-a.nav-link {
-    color: #F8B822;
-    font-size: large;
-    transition: color 0.3s ease-in-out;
-}
-
-a.nav-link:hover {
-    color: #F8B822 !important;
-    /* Gold hover */
-    text-decoration: none !important;
-    background-color: transparent;
-}
-
-.navbar-nav .nav-link {
-    padding: 10px 15px;
-}
-
-a.nav-link:hover {
-    color: #142F56 !important;
-    /* Deep navy text */
-    background-color: #F8B822 !important;
-    /* Gold background */
-    text-decoration: none !important;
-}
-
-/* Active link style */
-.nav-link.active {
-    color: #142F56 !important;
-    /* Deep navy text */
-    background-color: #F8B822;
-    border-bottom: none;
-    text-decoration: none !important;
-}
-
-
-.navbar-toggler-icon {
-    display: none;
-}
-
-/* Custom nav toggle button */
+/* Toggler Button */
 .custom-toggler {
-    position: relative;
     width: 50px;
-    /* Larger button */
     height: 50px;
-    border: 2px solid #F8B822;
+    border: 2px solid #f8b822;
     border-radius: 8px;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-/* Custom toggle icon lines */
 .custom-toggler .line {
-    display: block;
     width: 30px;
-    /* Ensure proper width */
     height: 4px;
-    /* Slightly thinner for balance */
-    background-color: #F8B822;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background-color: #f8b822;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Position each line */
 .custom-toggler .line:nth-child(1) {
     top: 14px;
 }
@@ -137,7 +108,6 @@ a.nav-link:hover {
     bottom: 14px;
 }
 
-/* Keep X centered and proportional */
 .custom-toggler[aria-expanded="true"] .line:nth-child(1) {
     top: 50%;
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -150,4 +120,125 @@ a.nav-link:hover {
 .custom-toggler[aria-expanded="true"] .line:nth-child(3) {
     top: 50%;
     transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #CAF0F8;
+    color: #03045E;
+    padding: 100px 0;
+}
+
+.intro-section h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.intro-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Welcome Section */
+.welcome-section .profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-section .text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .welcome-section .text-col {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+
+.custom-toggler .line:nth-child(2) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hero-heading {
+    font-size: 10vw;
+    font-weight: 900;
+    letter-spacing: 12px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.hero-subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.hero-arrow {
+    font-size: 3vw;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 1s ease-out forwards;
+    animation-delay: 1.2s;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero-arrow:hover {
+    transform: translateY(10px);
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #CAF0F8;
+    color: #03045E;
+    padding: 100px 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 80px 0;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .text-col {
+        margin-top: 20px;
+        text-align: center;
+    }
 }
