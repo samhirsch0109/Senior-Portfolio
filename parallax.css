@@ -54,7 +54,7 @@
 
 /* Modals */
 .modal-dialog {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     margin: 30px auto;
 }
