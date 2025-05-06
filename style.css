@@ -344,3 +344,27 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.words {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.words li {
+    margin-bottom: 16px;
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.words li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
