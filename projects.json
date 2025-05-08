@@ -1,48 +1,59 @@
 [
+  {
+    "title": "Web Design Year 1",
+    "modalTitle": "Sophomore Portfolio",
+    "bgImage": "imgs/purplebg.jpg",
+    "images": [
+      "imgs/sophportfolio1.png",
+      "imgs/sophportfolio2.png"
+    ],
+    "description": [
+      "Coded with HTML and CSS",
+      "Learned basic responsive layouts",
+      "Designed first portfolio site"
+    ]
+  }
+  ,
     {
-      "title": "Web Design Year 1",
-      "modalTitle": "Sophomore Portfolio",
-      "bgImage": "https://picsum.photos/200/300",
-      "images": [
-        "https://picsum.photos/id/1011/800/400",
-        "https://picsum.photos/id/1012/800/400",
-        "https://picsum.photos/id/1013/800/400"
+      "title": "Web Design Year 2",
+      "modalTitle": "On My Birthday",
+      "bgImage": "imgs/purplebg.jpg",
+      "images": [ "https://picsum.photos/id/1011/800/400",
+      "https://picsum.photos/id/1012/800/400"
+    ],
+     "video": "videos/demo.mp4",
+      "description": [
+        "Coded with HTML and CSS",
+        "Learned basic responsive layouts",
+        "Designed first portfolio site"
       ]
     },
     {
-      "title": "Web Design Year 1",
-      "modalTitle": "Logos",
-      "bgImage": "https://picsum.photos/200/300",
-      "images": [ "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"]
-    },
-    {
-        "title": "Web Design Year 1",
-        "modalTitle": "Logos",
-        "bgImage": "https://picsum.photos/200/300",
+        "title": "Web Design Year 2",
+        "modalTitle": "Rock Paper Scissors",
+        "bgImage": "imgs/purplebg.jpg",
         "images": [ "https://picsum.photos/id/1011/800/400",
         "https://picsum.photos/id/1012/800/400",
         "https://picsum.photos/id/1013/800/400"]
     },
     {
         "title": "Web Design Year 2",
-        "modalTitle": "Logos",
+        "modalTitle": "Halloween Animation",
         "bgImage": "https://picsum.photos/200/300",
         "images": [ "https://picsum.photos/id/1011/800/400",
         "https://picsum.photos/id/1012/800/400",
         "https://picsum.photos/id/1013/800/400"]
     },
     {
-    "title": "Web Design Year 2",
-    "modalTitle": "Logos",
+    "title": "Web Design Year 3",
+    "modalTitle": "Trunk or Treat",
     "bgImage": "https://picsum.photos/200/300",
     "images": [ "https://picsum.photos/id/1011/800/400",
     "https://picsum.photos/id/1012/800/400",
     "https://picsum.photos/id/1013/800/400"]
 }, {
-    "title": "Web Design Year 2",
-    "modalTitle": "Logos",
+    "title": "Web Design Year 3",
+    "modalTitle": "NJIT jQuery Slideshow",
     "bgImage": "https://picsum.photos/200/300",
     "images": [ "https://picsum.photos/id/1011/800/400",
     "https://picsum.photos/id/1012/800/400",
@@ -50,27 +61,29 @@
 },
 {
 "title": "Web Design Year 3",
-"modalTitle": "Logos",
+"modalTitle": "Marlboro Track",
 "bgImage": "https://picsum.photos/200/300",
 "images": [ "https://picsum.photos/id/1011/800/400",
 "https://picsum.photos/id/1012/800/400",
 "https://picsum.photos/id/1013/800/400"]
 },
 {
-    "title": "Web Design Year 3",
-    "modalTitle": "Logos",
+    "title": "AP Computer Science Priniples",
+    "modalTitle": "Whack a Mole Game",
     "bgImage": "https://picsum.photos/200/300",
     "images": [ "https://picsum.photos/id/1011/800/400",
     "https://picsum.photos/id/1012/800/400",
     "https://picsum.photos/id/1013/800/400"]
     },
     {
-        "title": "Web Design Year 2",
-        "modalTitle": "Logos",
+        "title": "AP Computer Science Priniples",
+        "modalTitle": "Create Task GPA Calculator",
         "bgImage": "https://picsum.photos/200/300",
         "images": [ "https://picsum.photos/id/1011/800/400",
         "https://picsum.photos/id/1012/800/400",
-        "https://picsum.photos/id/1013/800/400"]
+        "https://picsum.photos/id/1013/800/400"],
+        "video": "videos/apcsp.mp4"
+
         }
   ]
   

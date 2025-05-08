@@ -28,7 +28,7 @@ const vueApp = Vue.createApp({
     data() {
         return {
             pageTitle: 'Gallery',
-            projects: []
+            projects: [],
         };
     },
     methods: {
@@ -38,9 +38,21 @@ const vueApp = Vue.createApp({
             const modal = new bootstrap.Modal(modalEl);
             modal.show();
         },
+        toggleDescription(index) {
+            this.projects[index].showDescription = !this.projects[index].showDescription;
+        },
         async fetchProjects() {
             const res = await fetch('projects.json');
             const data = await res.json();
+
+            // Ensure each project has a description and toggle state
+            data.forEach(project => {
+                if (!Array.isArray(project.description)) {
+                    project.description = [];
+                }
+                project.showDescription = false;
+            });
+
             this.projects = data;
         }
     },
@@ -50,11 +62,3 @@ const vueApp = Vue.createApp({
 });
 
 vueApp.mount('#vue_app');
-
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".parallax-inner").forEach((el) => {
-        const speed = parseFloat(el.getAttribute("data-speed")) || 0.2;
-        const offset = window.scrollY * speed;
-        el.style.transform = `translateY(${offset}px)`;
-    });
-});

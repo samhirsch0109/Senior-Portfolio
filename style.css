@@ -1,7 +1,9 @@
 body {
     margin: 0;
     scroll-behavior: smooth;
-
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
 }
 
 /* Hero Section */
@@ -18,14 +20,12 @@ body {
 
 .hero-heading {
     font-size: 20vw;
-    /* Increase this for a bolder look, e.g., 12vw or use px for exact size */
     font-weight: 900;
     color: white;
     margin-bottom: 1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-    /* Optional: adds a subtle shadow */
     letter-spacing: 12px;
     opacity: 0;
     transform: translateY(50px);
@@ -33,24 +33,12 @@ body {
     animation-delay: 0.3s;
 }
 
-
-.hero-arrow,
-.hero-arrow:link,
-.hero-arrow:visited,
-.hero-arrow:hover,
-.hero-arrow:focus,
-.hero-arrow:active {
-    text-decoration: none !important;
-}
-
-
 .hero-arrow {
     opacity: 0;
     transform: translateY(20px);
     animation: arrowFadeSlideIn 1s ease-out forwards;
     animation-delay: 1.4s;
     font-size: 8vw;
-    /* Increased from 8vw for a bigger arrow */
     cursor: pointer;
     color: white;
     transition: transform 0.3s ease;
@@ -58,9 +46,7 @@ body {
     display: inline-block;
     line-height: 1;
     margin-top: 1rem;
-    /* Optional: space it from the heading above */
 }
-
 
 .hero-arrow:hover {
     transform: translateY(10px);
@@ -80,7 +66,7 @@ body {
     }
 }
 
-/* Navbar hidden initially */
+/* Navbar */
 .navbar {
     opacity: 0;
     transform: translateY(-100%);
@@ -89,23 +75,25 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+.navbar .nav-link {
+    color: #1f2937;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: #8755e4;
+    color: #ffffff;
+}
+
 .navbar-brand p {
     margin: 0;
     font-weight: 700;
     color: #007bff;
-
 }
 
 .navbar.show {
     opacity: 1;
     transform: translateY(0);
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-    color: #142f56;
-    background-color: #2d22f8;
-    border-radius: 5px;
 }
 
 /* Toggler Button */
@@ -161,19 +149,14 @@ body {
 
 /* Intro Section */
 .intro-section {
-    background-color: #e9f5f7;
-    color: #03045E;
+    background-color: #f5f7fa;
+    color: #1f2937;
     padding: 100px 0;
 }
 
-.intro-section,
-.welcome-section {
-    padding: 4rem 0;
-}
-
-.intro-section h2 {
-    font-weight: 700;
-    letter-spacing: 1px;
+.intro-section h2,
+.welcome-section h2 {
+    color: #7f00b6;
 }
 
 .intro-section p {
@@ -203,12 +186,6 @@ body {
         margin-top: 20px;
         text-align: center;
     }
-}
-
-
-.custom-toggler .line:nth-child(2) {
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
 }
 
 .hero-heading {
@@ -244,8 +221,8 @@ body {
 
 /* Intro Section */
 .intro-section {
-    background-color: #e5f0f3;
-    color: #03045E;
+    background-color: #f5f7fa;
+    color: #1f2937;
     padding: 100px 0;
 }
 
@@ -364,7 +341,72 @@ body {
     content: "✔";
     position: absolute;
     left: 0;
-    color: #28a745;
+    color: #198754;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: #ffffff;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    object-position: 80% 20%;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #edf2f7;
+}
+
+.skills-section h2 {
+    color: #8755e4;
+}
+
+.skills-section ul {
+    padding-left: 0;
+}
+
+.skills-section li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding-left: 0.5rem;
+}
+
+.checkmark {
+    color: #4e35cf;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* Typography */
+h2 {
+    color: #8755e4;
+    font-weight: 700;
+}
+
+p.lead {
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .text-md-start {
+        text-align: center !important;
+    }
+
+    .skills-section ul {
+        text-align: center;
+    }
 }
