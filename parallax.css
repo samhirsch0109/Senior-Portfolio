@@ -98,10 +98,19 @@
 
 .carousel-item img {
     width: 100%;
-    height: 100%;
+    height: 400px;
     object-fit: contain;
     /* Prevents cropping, but may leave empty space */
     object-position: center;
+    border-radius: 20px;
+}
+
+.carousel-item video {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    /* Prevents cropping, but may leave empty space */
+    object-position: cover;
 }
 
 @media (max-width: 576px) {

@@ -18,10 +18,9 @@
     "modalTitle": "On My Birthday",
     "bgImage": "imgs/purplebg.jpg",
     "images": [
-      "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400"
+      "imgs/bday1.png",
+      "imgs/bday2.png"
     ],
-    "video": "videos/demo.mp4",
     "description": [
       " ✰ Coded with HTML and CSS and Javascript ",
       " ✰ Learned basic responsive layouts",
@@ -33,9 +32,8 @@
     "modalTitle": "Rock Paper Scissors",
     "bgImage": "imgs/purplebg.jpg",
     "images": [
-      "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"
+      "imgs/rps.png",
+      "https://picsum.photos/id/1012/800/400"
     ],
     "description": [
       " ✰ Coded with HTML and CSS and Javascript ",
@@ -63,9 +61,8 @@
     "modalTitle": "Trunk or Treat",
     "bgImage": "imgs/purplebg.jpg",
     "images": [
-      "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"
+      "imgs/trunk1.png",
+      "imgs/trunk2.png"
     ],
     "description": [
       " ✰ Coded with HTML and CSS and Javascript ",
@@ -78,9 +75,8 @@
     "modalTitle": "NJIT jQuery Slideshow",
     "bgImage": "imgs/purplebg.jpg",
     "images": [
-      "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"
+      "imgs/njit1.png",
+      "imgs/njit2.png"
     ],
     "description": [
       " ✰ Coded with HTML and CSS and Javascript ",
@@ -93,9 +89,9 @@
     "modalTitle": "Marlboro Track",
     "bgImage": "imgs/purplebg.jpg",
     "images": [
-      "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"
+      "imgs/track1.png",
+      "imgs/track2.png",
+      "imgs/track3.png"
     ],
     "description": [
       " ✰ Coded with HTML and CSS and Javascript ",
@@ -112,7 +108,7 @@
       "https://picsum.photos/id/1012/800/400",
       "https://picsum.photos/id/1013/800/400"
     ],
-    "video": "videos/whackamole.mp4",
+    "video": "videos/whackamole.MP4",
     "description": [
       " ✰ Coded with HTML and CSS and Javascript ",
       " ✰ Learned basic responsive layouts",
