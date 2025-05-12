@@ -147,6 +147,14 @@ body {
     transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
 
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+  border-bottom: 2px solid #007bff;
+}
+ 
+
 /* Intro Section */
 .intro-section {
     background-color: #f5f7fa;
@@ -411,17 +419,10 @@ p.lead {
     }
 }
 
-/* Make the footer the same color as the navbar */
 footer {
-    background-color: #142F56;
+    background-color: #8755e4;
     /* Same as the navbar */
     color: white;
-}
-
-footer a {
-    color: #F8B822;
-    /* Matching link color from navbar */
-    transition: color 0.3s ease-in-out;
 }
 
 footer a:hover {
@@ -448,9 +449,3 @@ footer .col-md-4 {
     margin-bottom: 20px;
 }
 
-footer .text-center {
-    background-color: #082D65;
-    /* Darker background for the bottom text */
-    padding: 10px 0;
-    font-size: 0.9rem;
-}
