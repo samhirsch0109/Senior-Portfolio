@@ -1,134 +1,119 @@
 [
   {
-    "title": "Web Design Year 1",
-    "modalTitle": "Sophomore Portfolio",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "Web Design Year 1 | Sophomore Portfolio ",
+    "bgImage": "imgs/sophportfolio1.png",
     "images": [
       "imgs/sophportfolio1.png",
       "imgs/sophportfolio2.png"
     ],
     "description": [
-      "✰ Coded with HTML and CSS",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Built using HTML and CSS",
+      "✰ Learned how to create a responsive web layout for multiple devices",
+      "✰ Designed and developed a personal portfolio to showcase Year 1 projects"
     ]
   },
   {
-    "title": "Web Design Year 2",
-    "modalTitle": "On My Birthday",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "Web Design Year 2 | On My Birthday",
+    "bgImage": "imgs/bday1.png",
     "images": [
       "imgs/bday1.png",
       "imgs/bday2.png"
     ],
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Coded with HTML, CSS, and JavaScript",
+      "✰ Interactive birthday-themed page with buttons linking to yearly highlights",
+      "✰ Practiced DOM manipulation and basic user interaction with JavaScript"
     ]
   },
   {
-    "title": "Web Design Year 2",
-    "modalTitle": "Rock Paper Scissors",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "Web Design Year 2 | Rock Paper Scissors",
+    "bgImage": "imgs/rps.png",
     "images": [
       "imgs/rps.png",
       "https://picsum.photos/id/1012/800/400"
     ],
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ JavaScript-powered Rock, Paper, Scissors game",
+      "✰ Features clean and engaging color scheme",
+      "✰ Strengthened understanding of conditional logic and event handling"
     ]
   },
   {
-    "title": "Web Design Year 2",
-    "modalTitle": "Halloween Animation",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "Web Design Year 2 | Halloween Animation ",
+    "bgImage": "imgs/halloanimation.png",
     "images": [
-      "imgs/halloanimation.png",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"
+      "imgs/halloanimation.png"
     ],
+   
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Created for TCA 2 using only HTML and CSS",
+      "✰ Used keyframes and CSS transitions to animate Halloween-themed elements"
     ]
   },
   {
-    "title": "Web Design Year 3",
-    "modalTitle": "Trunk or Treat",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "Web Design Year 3 | Trunk or Treat",
+    "bgImage": "imgs/trunk1.png",
     "images": [
       "imgs/trunk1.png",
       "imgs/trunk2.png"
     ],
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Designed interactive site for a school Trunk or Treat event",
+      "✰ Implemented layout using HTML, CSS, and JavaScript",
+      "✰ Focused on mobile responsiveness and festive design elements"
     ]
   },
   {
-    "title": "Web Design Year 3",
-    "modalTitle": "NJIT jQuery Slideshow",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "Web Design Year 3 | NJIT jQuery Slideshow",
+    "bgImage": "imgs/njit1.png",
     "images": [
       "imgs/njit1.png",
       "imgs/njit2.png"
     ],
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Built a custom slideshow using jQuery",
+      "✰ Practiced DOM manipulation and jQuery effects",
+      "✰ Included captions, transitions, and image fading effects"
     ]
   },
   {
-    "title": "Web Design Year 3",
-    "modalTitle": "Marlboro Track",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "Web Design Year 3 | Marlboro Track",
+    "bgImage": "imgs/track1.png",
     "images": [
       "imgs/track1.png",
       "imgs/track2.png",
       "imgs/track3.png"
     ],
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Created an informational website for the Marlboro High School Track & Field team",
+      "✰ Organized seasonal pages, records, and links for athletes",
+      "✰ Used HTML, CSS, JavaScript, and Bootstrap for clean, responsive design"
     ]
   },
   {
-    "title": "AP Computer Science Principles",
-    "modalTitle": "Whack a Mole Game",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "AP Computer Science Principles | Whack a Mole Game",
+    "bgImage": "imgs/whackamole.png",
     "images": [
-      "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"
+      "imgs/whackamole.png"
     ],
     "video": "videos/whackamole.MP4",
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Built an interactive game using MIT App Inventor",
+      "✰ Incorporated timers, score tracking, and event-driven logic",
+      "✰ Demonstrated ability to apply programming concepts in a fun, functional project"
     ]
   },
   {
-    "title": "AP Computer Science Principles",
-    "modalTitle": "Create Task GPA Calculator",
-    "bgImage": "imgs/purplebg.jpg",
+    "modalTitle": "AP Computer Science Principles | Create Task GPA Calculator",
+    "bgImage": "imgs/apcsp.png",
     "images": [
-      "https://picsum.photos/id/1011/800/400",
-      "https://picsum.photos/id/1012/800/400",
-      "https://picsum.photos/id/1013/800/400"
+      "imgs/apcsp.png"
     ],
     "video": "videos/apcsp.mp4",
     "description": [
-      " ✰ Coded with HTML and CSS and Javascript ",
-      " ✰ Learned basic responsive layouts",
-      " ✰ Designed first portfolio site"
+      "✰ Developed a GPA calculator with dropdown menus and grade logic",
+      "✰ Submitted as part of the official Create Task project",
+      "✰Coded using Javascript"
     ]
   }
 ]

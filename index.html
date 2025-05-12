@@ -33,7 +33,7 @@
             <a class="nav-link" href="#welcome">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#vue_app">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -83,6 +83,7 @@
         </div>
       </div>
     </div>
+    </section>
 
   <!-- Skills Section -->
   <section id="skills" class="skills-section py-5">
@@ -112,9 +113,10 @@
       </ul>
     </div>
   </section> 
-  <main id="vue_app" class="container">
-    <h1 class="text-center my-3">{{ pageTitle }}</h1>
 
+  
+  <section id="vue_app" class="container">
+    <h1 class="text-center my-3">{{ pageTitle }}</h1>
     <div class="parallax-grid">
       <div class="project-container parallax-item" :data-speed="0.01" v-for="(project, index) in projects" :key="index">
         <img :src="project.bgImage" class="project-image" :alt="project.title" />
@@ -202,61 +204,38 @@
         </div>
       </div>
     </div>
-  </main>
-<footer class="bg-dark-purple text-white py-5">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <!-- Left Side: Social Media and Logo -->
-      <div class="col-12 col-md-4 mb-4">
-        <div class="d-flex align-items-center">
-          <a href="index.html" class="navbar-brand text-light fw-bold">SH</a>
-          <div class="ms-3">
-            <a href="https://www.linkedin.com" class="text-light me-3" target="_blank">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com" class="text-light me-3" target="_blank">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://twitter.com" class="text-light" target="_blank">
-              <i class="fab fa-twitter fa-2x"></i>
-            </a>
-          </div>
+  </section>
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="mb-2">&copy; 2025 Samantha Hirsch. All rights reserved.</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <!-- Middle: About Section -->
-      <div class="col-12 col-md-4 mb-4">
-        <h5 class="fw-bold mb-3 text-light">About Samantha Hirsch</h5>
-        <p class="text-muted">
-          A passionate and driven senior, preparing to study Computer Science at Michigan State University.
-          Passionate about web design, development, and problem-solving. Let's connect!
-        </p>
-      </div>
-
-      <!-- Right Side: Contact Form -->
-      <div class="col-12 col-md-4 mb-4">
-        <h5 class="fw-bold mb-3 text-light">Get In Touch</h5>
-        <form action="submit-form.php" method="POST">
-          <div class="mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Your email" required />
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-light w-100">Send Message</button>
-        </form>
-      </div>
     </div>
-
-    <!-- Footer Bottom (Copyright) -->
-    <div class="row text-center mt-4">
-      <div class="col-12">
-        <p class="mb-0 text-muted">Designed and created by Sam Hirsch. © 2025 </p>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
 <!-- Font Awesome (for icons) -->
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
