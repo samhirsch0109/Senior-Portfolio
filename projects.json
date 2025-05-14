@@ -2,151 +2,107 @@
   {
     "modalTitle": "Web Design Year 1 | Sophomore Portfolio ",
     "bgImage": "imgs/sophportfolio1.png",
-    "images": [
-      "imgs/sophportfolio1.png",
-      "imgs/sophportfolio2.png"
-    ],
+    "images": ["imgs/sophportfolio1.png", "imgs/sophportfolio2.png"],
     "description": [
       "✰ Built using HTML and CSS",
       "✰ Learned how to create a responsive web layout for multiple devices",
       "✰ Designed and developed a personal portfolio to showcase Year 1 projects",
-     "<a href=\"https://github.com/samhirsch0109/College-Recruitment\" target=\"_blank\">✰ Go to site</a>"
-
+      "<a href=\"https://samhirsch0109.github.io/year-1-portfolio/\" target=\"_blank\">✰ View site</a>"
     ]
   },
   {
     "modalTitle": "Web Design Year 2 | On My Birthday",
     "bgImage": "imgs/bday1.png",
-    "images": [
-      "imgs/bday1.png",
-      "imgs/bday2.png"
-    ],
+    "images": ["imgs/bday1.png", "imgs/bday2.png"],
     "description": [
       "✰ Coded with HTML, CSS, and JavaScript",
       "✰ Interactive birthday-themed page with buttons linking to yearly highlights",
-      "✰ Practiced basic user interaction with JavaScript"
+      "✰ Practiced basic user interaction with JavaScript",
+      "<a href=\"https://samhirsch0109.github.io/on-my-birthday/\" target=\"_blank\">✰ View site</a>"
     ]
   },
   {
     "modalTitle": "Web Design Year 2 | Rock Paper Scissors",
     "bgImage": "imgs/rps.png",
-    "images": [
-      "imgs/rps.png"
-    ],
-    "video": [
-      "videos/rps.mp4"
-    ],
+    "images": ["imgs/rps.png"],
+    "video": ["videos/rps.mp4"],
     "description": [
       "✰ JavaScript-powered Rock, Paper, Scissors game",
       "✰ Features clean and engaging color scheme",
-      "✰ Strengthened understanding of conditional logic and event handling"
+      "✰ Strengthened understanding of conditional logic and event handling",
+      "<a href=\"https://samhirsch0109.github.io/rock--paper--scissors/\" target=\"_blank\">✰ View site</a>"
     ]
   },
   {
     "modalTitle": "Web Design Year 2 | Halloween Animation ",
     "bgImage": "imgs/halloanimation.png",
-    "images": [
-      "imgs/halloanimation.png"
-    ],
-    "video": [
-      "videos/animation.mp4"
-    ],
-   
+    "images": ["imgs/halloanimation.png"],
+    "video": ["videos/animation.mp4"],
+
     "description": [
       "✰ Created for TCA 1 using HTML and CSS",
-      "✰ Used keyframes and CSS transitions to animate Halloween-themed elements"
+      "✰ Used keyframes and CSS transitions to animate Halloween-themed elements",
+      "<a href=\"https://samhirsch0109.github.io/tca-1-halloween-animation/\" target=\"_blank\">✰ View site</a>"
     ]
   },
-{
-"modalTitle": "Web Design Year 2 | Future Me",
-"bgImage": "imgs/future1.png",
-"images": [
-  "imgs/future1.png",
-  "imgs/future2.png"
-],
- "description": [
+  {
+    "modalTitle": "Web Design Year 2 | Future Me",
+    "bgImage": "imgs/future1.png",
+    "images": ["imgs/future1.png", "imgs/future2.png"],
+    "description": [
       "✰ Designed interactive site for a school Trunk or Treat event",
       "✰ Implemented layout using HTML, CSS, and JavaScript",
-      "✰ Focused on mobile responsiveness and festive design elements"
+      "✰ Focused on mobile responsiveness and festive design elements",
+            "<a href=\"https://samhirsch0109.github.io/future-me/\" target=\"_blank\">✰ View site</a>"
     ]
-},
+  },
   {
     "modalTitle": "Web Design Year 3 | College Recruitment",
     "bgImage": "imgs/college1.png",
-    "images": [
-      "imgs/college1.png",
-      "imgs/college2.png"
-    ],
+    "images": ["imgs/college1.png", "imgs/college2.png"],
     "description": [
       "✰ Designed interactive site for a school Trunk or Treat event",
       "✰ Implemented layout using HTML, CSS, and JavaScript",
-      "✰ Focused on mobile responsiveness and festive design elements"
+      "✰ Focused on mobile responsiveness and festive design elements",
+                  "<a href=\"https://samhirsch0109.github.io/College-Recruitment/\" target=\"_blank\">✰ View site</a>"
+
     ]
   },
   {
     "modalTitle": "Web Design Year 3 | Trunk or Treat",
     "bgImage": "imgs/trunk1.png",
-    "images": [
-      "imgs/trunk1.png",
-      "imgs/trunk2.png"
-    ],
+    "images": ["imgs/trunk1.png", "imgs/trunk2.png"],
     "description": [
       "✰ Designed interactive site for a school Trunk or Treat event",
       "✰ Implemented layout using HTML, CSS, and JavaScript",
-      "✰ Used jQuery to have javascript load when the page starts"
+      "✰ Used jQuery to have javascript load when the page starts",
+                  "<a href= \"https://samhirsch0109.github.io/trunk-or-treat/\" target=\"_blank\">✰ View site</a>"
+
     ]
   },
   {
     "modalTitle": "Web Design Year 3 | NJIT jQuery Slideshow",
     "bgImage": "imgs/njit1.png",
-    "images": [
-      "imgs/njit1.png",
-      "imgs/njit2.png"
-    ],
+    "images": ["imgs/njit1.png", "imgs/njit2.png"],
     "description": [
       "✰ Built a custom slideshow using jQuery",
       "✰ Practiced DOM manipulation and jQuery effects",
-      "✰ Included captions, transitions, and image fading effects"
+      "✰ Included captions, transitions, and image fading effects",
+                  "<a href=\"https://samhirsch0109.github.io/NJITProject1/\" target=\"_blank\">✰ View site</a>"
+
     ]
   },
   {
     "modalTitle": "Web Design Year 3 | Marlboro Track",
     "bgImage": "imgs/track1.png",
-    "images": [
-      "imgs/track1.png",
-      "imgs/track2.png",
-      "imgs/track3.png"
-    ],
+    "images": ["imgs/track1.png", "imgs/track2.png", "imgs/track3.png"],
     "description": [
       "✰ Created an informational website for the Marlboro High School Track & Field team",
       "✰ Organized seasonal pages, records, and links for athletes",
-      "✰ Used HTML, CSS, JavaScript, and Bootstrap for clean, responsive design"
-    ]
-  },
-  {
-    "modalTitle": "AP Computer Science Principles | Whack a Mole Game",
-    "bgImage": "imgs/whackamole.png",
-    "images": [
-      "imgs/whackamole.png"
-    ],
-    "video": "videos/whackamole.MP4",
-    "description": [
-      "✰ Built an interactive game using MIT App Inventor",
-      "✰ Incorporated timers, score tracking, and event-driven logic",
-      "✰ Demonstrated ability to apply programming concepts in a fun, functional project"
-    ]
-  },
-  {
-    "modalTitle": "AP Computer Science Principles | Create Task GPA Calculator",
-    "bgImage": "imgs/apcsp.png",
-    "images": [
-      "imgs/apcsp.png"
-    ],
-    "video": "videos/apcsp.mp4",
-    "description": [
-      "✰ Developed a GPA calculator with dropdown menus and grade logic",
-      "✰ Submitted as part of the official Create Task project",
-      "✰ Coded using Javascript"
+      "✰ Used HTML, CSS, JavaScript, and Bootstrap for clean, responsive design",
+                  "<a href=\"https://samhirsch0109.github.io/Marlboro-Track/\" target=\"_blank\">✰ View site</a>"
+
     ]
   }
+ 
 ]

@@ -121,13 +121,13 @@ section {
 
 .navbar .nav-link.active {
   font-weight: bold;
-  border-bottom: 2px solid #007bff;
+  border-bottom: 2px solid #8755e4;
 }
 
 .navbar-brand p {
   margin: 0;
   font-weight: 700;
-  color: #007bff;
+  color: #8755e4;
 }
 
 /* ===========================
@@ -136,7 +136,7 @@ section {
 .custom-toggler {
   width: 50px;
   height: 50px;
-  border: 2px solid #0039b4;
+  border: 2px solid #7f00b6;
   border-radius: 8px;
   background: transparent;
   display: flex;
@@ -148,7 +148,7 @@ section {
 .custom-toggler .line {
   width: 30px;
   height: 4px;
-  background-color: #225bf8;
+  background-color: #7f00b6;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -485,10 +485,35 @@ ul {
 
 h5 {
   font-family: "dupincel-variable", sans-serif;
-color: #7f00b6;
+  color: #7f00b6;
 }
 
 ul.list-unstyled a {
   text-decoration: none;
   color: #8755e4;
+}
+
+#scrollTopBtn:hover {
+  background-color: #d5cee2;
+  transform: scale(1.1);
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #a98be0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000;
 }
