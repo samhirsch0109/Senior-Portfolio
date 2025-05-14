@@ -492,28 +492,3 @@ ul.list-unstyled a {
   text-decoration: none;
   color: #8755e4;
 }
-
-#scrollTopBtn:hover {
-  background-color: #d5cee2;
-  transform: scale(1.1);
-}
-
-#scrollTopBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: #a98be0;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.3s;
-  z-index: 1000;
-}
