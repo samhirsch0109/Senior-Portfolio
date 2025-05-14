@@ -9,7 +9,9 @@
     "description": [
       "✰ Built using HTML and CSS",
       "✰ Learned how to create a responsive web layout for multiple devices",
-      "✰ Designed and developed a personal portfolio to showcase Year 1 projects"
+      "✰ Designed and developed a personal portfolio to showcase Year 1 projects",
+     "<a href=\"https://github.com/samhirsch0109/College-Recruitment\" target=\"_blank\">✰ Go to site</a>"
+
     ]
   },
   {
@@ -22,15 +24,17 @@
     "description": [
       "✰ Coded with HTML, CSS, and JavaScript",
       "✰ Interactive birthday-themed page with buttons linking to yearly highlights",
-      "✰ Practiced DOM manipulation and basic user interaction with JavaScript"
+      "✰ Practiced basic user interaction with JavaScript"
     ]
   },
   {
     "modalTitle": "Web Design Year 2 | Rock Paper Scissors",
     "bgImage": "imgs/rps.png",
     "images": [
-      "imgs/rps.png",
-      "https://picsum.photos/id/1012/800/400"
+      "imgs/rps.png"
+    ],
+    "video": [
+      "videos/rps.mp4"
     ],
     "description": [
       "✰ JavaScript-powered Rock, Paper, Scissors game",
@@ -44,10 +48,39 @@
     "images": [
       "imgs/halloanimation.png"
     ],
+    "video": [
+      "videos/animation.mp4"
+    ],
    
     "description": [
-      "✰ Created for TCA 2 using only HTML and CSS",
+      "✰ Created for TCA 1 using HTML and CSS",
       "✰ Used keyframes and CSS transitions to animate Halloween-themed elements"
+    ]
+  },
+{
+"modalTitle": "Web Design Year 2 | Future Me",
+"bgImage": "imgs/future1.png",
+"images": [
+  "imgs/future1.png",
+  "imgs/future2.png"
+],
+ "description": [
+      "✰ Designed interactive site for a school Trunk or Treat event",
+      "✰ Implemented layout using HTML, CSS, and JavaScript",
+      "✰ Focused on mobile responsiveness and festive design elements"
+    ]
+},
+  {
+    "modalTitle": "Web Design Year 3 | College Recruitment",
+    "bgImage": "imgs/college1.png",
+    "images": [
+      "imgs/college1.png",
+      "imgs/college2.png"
+    ],
+    "description": [
+      "✰ Designed interactive site for a school Trunk or Treat event",
+      "✰ Implemented layout using HTML, CSS, and JavaScript",
+      "✰ Focused on mobile responsiveness and festive design elements"
     ]
   },
   {
@@ -60,7 +93,7 @@
     "description": [
       "✰ Designed interactive site for a school Trunk or Treat event",
       "✰ Implemented layout using HTML, CSS, and JavaScript",
-      "✰ Focused on mobile responsiveness and festive design elements"
+      "✰ Used jQuery to have javascript load when the page starts"
     ]
   },
   {
@@ -113,7 +146,7 @@
     "description": [
       "✰ Developed a GPA calculator with dropdown menus and grade logic",
       "✰ Submitted as part of the official Create Task project",
-      "✰Coded using Javascript"
+      "✰ Coded using Javascript"
     ]
   }
 ]
