@@ -1,17 +1,23 @@
 $(document).ready(function () {
-    // Lock scroll until animation ends
+    // Lock scroll for intro animation
     $("body").css("overflow", "hidden");
     setTimeout(() => $("body").css("overflow", "auto"), 2500);
 
-    // Show navbar after scrolling past the #intro section
-    const introOffset = $("#intro").offset().top + 50; // triggers earlier
-    $(window).on("scroll", function () {
-        if ($(this).scrollTop() > introOffset - 100) {
+    const introOffset = $("#intro").offset()?.top + 50 || 100;
+
+    const checkNavbarVisibility = () => {
+        if ($(window).scrollTop() > introOffset - 100) {
             $(".navbar").addClass("show");
         } else {
             $(".navbar").removeClass("show");
         }
-    });
+    };
+
+    // Initial check
+    checkNavbarVisibility();
+
+    // Scroll listener
+    $(window).on("scroll", checkNavbarVisibility);
 
     // Smooth scroll
     $(".hero-arrow-link").on("click", function (e) {
