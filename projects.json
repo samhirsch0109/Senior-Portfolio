@@ -50,9 +50,8 @@
     "bgImage": "imgs/future1.png",
     "images": ["imgs/future1.png", "imgs/future2.png"],
     "description": [
-      "✰ Designed interactive site for a school Trunk or Treat event",
-      "✰ Implemented layout using HTML, CSS, and JavaScript",
-      "✰ Focused on mobile responsiveness and festive design elements",
+      "✰ Designed site for a future job",
+      "✰ Implemented layout using HTML and CSS",
             "<a href=\"https://samhirsch0109.github.io/future-me/\" target=\"_blank\">✰ View site</a>"
     ]
   },
@@ -61,9 +60,8 @@
     "bgImage": "imgs/college1.png",
     "images": ["imgs/college1.png", "imgs/college2.png"],
     "description": [
-      "✰ Designed interactive site for a school Trunk or Treat event",
+      "✰ Designed a website for college recruitment",
       "✰ Implemented layout using HTML, CSS, and JavaScript",
-      "✰ Focused on mobile responsiveness and festive design elements",
                   "<a href=\"https://samhirsch0109.github.io/College-Recruitment/\" target=\"_blank\">✰ View site</a>"
 
     ]
@@ -86,7 +84,7 @@
     "images": ["imgs/njit1.png", "imgs/njit2.png"],
     "description": [
       "✰ Built a custom slideshow using jQuery",
-      "✰ Practiced DOM manipulation and jQuery effects",
+            "✰ NJIT Project 1",
       "✰ Included captions, transitions, and image fading effects",
                   "<a href=\"https://samhirsch0109.github.io/NJITProject1/\" target=\"_blank\">✰ View site</a>"
 
@@ -97,8 +95,7 @@
     "bgImage": "imgs/track1.png",
     "images": ["imgs/track1.png", "imgs/track2.png", "imgs/track3.png"],
     "description": [
-      "✰ Created an informational website for the Marlboro High School Track & Field team",
-      "✰ Organized seasonal pages, records, and links for athletes",
+      "✰ Created an informational website for the Marlboro High School Track & Field team for my Work Based Learning Project",
       "✰ Used HTML, CSS, JavaScript, and Bootstrap for clean, responsive design",
                   "<a href=\"https://samhirsch0109.github.io/Marlboro-Track/\" target=\"_blank\">✰ View site</a>"
 

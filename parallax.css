@@ -93,7 +93,7 @@
   .description-toggle-btn {
     font-size: 0.75rem;
     padding: 3px 7px;
-    border: 1px solid #007bff;
+    border: 1px solid #007bff !important;
     color: #007bff;
     background: transparent;
     border-radius: 12px;
@@ -138,3 +138,54 @@
     }
   }
   
+.btn-view-project {
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-view-project:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+/* Headline Style */
+#vue_app h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #8755e4;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle/Instructions Style */
+#vue_app p {
+  color: #000000;
+
+}
+.btn-toggle-description {
+  background-color: #f8f9fa;
+  color: #000000;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.btn-toggle-description:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  color: #212529;
+  cursor: pointer;
+}

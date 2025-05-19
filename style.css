@@ -124,10 +124,10 @@ section {
   border-bottom: 2px solid #8755e4;
 }
 
-.navbar-brand p {
+.navbar-brand {
   margin: 0;
   font-weight: 700;
-  color: #8755e4;
+  color: #8755e4 !important;
 }
 
 /* ===========================
