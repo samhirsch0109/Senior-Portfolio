@@ -5,7 +5,7 @@
   <title>Senior Portfolio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="imgs/initals.png">
+  <link rel="icon" type="image/x-icon" href="imgs/logo.png">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -24,7 +24,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-uppercase" href="#"> SH </a>
+      <a class="navbar-brand fw-bold text-uppercase" href="#"> <img class="img-fluid" src="imgs/logo.png"width="50px" height="50px"> </a>
 
       <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="line"></span><span class="line"></span><span class="line"></span>
@@ -42,7 +42,7 @@
           <li class="nav-item">
 
           <li class="nav-item">
-            <a class="nav-link" href="#move">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -213,34 +213,55 @@
       </div>
   </section>
   <footer>
-    <!--footer-->
-    <footer id="contact">
-      <div class="container">
-        <div class="footer-logo">Samantha Hirsch</div>
+   <!-- Professional Footer -->
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <!-- Branding -->
+    <div class="footer-brand">
+ <img src="imgs/logo.png" alt="SCH Logo" style="width: 100px; height: 100px; border-radius: 50%;"> 
+      <p>Designed and built by Samantha Hirsch</p>
+    </div>
 
-        <ul class="footer-nav">
-          <li><a href="#intro">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#vue_app">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation Links -->
+    <div class="footer-links">
+      <h4>Site Links</h4>
+      <ul>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#vue_app">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
-        <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> sammyhirsch0109@gmail.com</p>
-          <p><i class="fas fa-phone"></i> (732) 832-6873</p>
-        </div>
-        <div id="move"> </div>
-        <div class="social-icons">
-          <a href="https://github.com/dashboard" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="footer-bottom">
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-envelope"></i> sammyhirsch0109@gmail.com</li>
+        <li><i class="fas fa-phone"></i> (732) 832-6873</li>
+      </ul>
+    </div>
 
-          <p class="copyright">
-           Designed and created by Sam Hirsch
-          </p>
-        </div>
-    </footer>
-    <!--end footer-->
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <div class="social-icons">
+        <a href="https://github.com/dashboard" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="mailto:sammyhirsch0109@gmail.com" target="_blank" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Samantha Hirsch. All rights reserved.</p>
+  </div>
+</footer>
+
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
