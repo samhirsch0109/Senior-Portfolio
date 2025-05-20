@@ -132,7 +132,7 @@ section {
 
 /* ===========================
      Toggler Button
-  =========================== */
+  =========== === == = ========== */
 .custom-toggler {
   width: 50px;
   height: 50px;
@@ -444,4 +444,58 @@ section {
 
 p {
   margin-top: 20px;
+}
+
+.footer li a {
+  color: white !important;
+}
+
+.footer a {
+  color: #f3eaff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.footer-contact li {
+  color: #ffffff !important;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal center */
+  text-align: center;  /* text centering */
+}
+
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+
+.footer-brand img {
+  margin-left: 15px;
+}
+
+.footer-container {
+  gap: 60px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact,
+.footer-social {
+  padding: 10px 15px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 60px; /* Increase from 40px to 60px to spread out sections */
+  max-width: 1200px;
+  margin: auto;
 }
