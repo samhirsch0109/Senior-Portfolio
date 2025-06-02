@@ -127,6 +127,7 @@
   object-fit: cover;
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   backface-visibility: hidden;
+  border-radius: 20px;
 }
 
 .project-container:hover .project-image {
@@ -264,7 +265,7 @@ ul.list-unstyled li::before {
   backdrop-filter: blur(10px);
 }
 
-/* === Updated Purple Modal Header === */
+/* === Purple Modal Header === */
 .modal-header {
   background: linear-gradient(135deg, #8755e4 0%, #9b6ee6 100%);
   border-bottom: none;
@@ -321,44 +322,16 @@ ul.list-unstyled li::before {
   height: 280px;
   object-fit: contain;
   object-position: center;
-  background-color: #f8f9fa;
+  background-color: none;
   border-radius: 0.625rem;
   transition: transform 0.3s ease;
+  border-radius: 20px;
 }
 
 .carousel-item:hover img,
 .carousel-item:hover video {
   transform: scale(1.02);
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 7%;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  opacity: 1;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(135, 85, 228, 0.8);
-  border-radius: 50%;
-  padding: 1rem;
-  background-size: 45%;
-  box-shadow: 0 2px 8px rgba(135, 85, 228, 0.3);
-  transition: all 0.3s ease;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: rgba(135, 85, 228, 1);
-  box-shadow: 0 4px 12px rgba(135, 85, 228, 0.5);
-}
-
 /* === Responsive === */
 @media (max-width: 768px) {
   .container {

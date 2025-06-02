@@ -1,0 +1,109 @@
+
+/* Skills section background and spacing */
+.skills-section {
+  background-color: #f5f7fb;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Skills section heading */
+.skills-section h2 {
+  color: #8755e4;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Decorative underline for skills heading */
+.skills-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(135, 85, 228, 0.2), #8755e4, rgba(135, 85, 228, 0.2));
+  border-radius: 2px;
+}
+
+/* Skills cards */
+.skills-section .card {
+  position: relative;
+  border: none;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem 1rem;
+  height: 100%;
+}
+
+/* Card hover effect */
+.skills-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated underline for cards */
+.skills-section .card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px;
+  background-color: #8755e4;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.skills-section .card:hover::after {
+  width: 80%;
+}
+
+/* Skill icons */
+.skills-section img {
+  max-height: 70px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+/* Card titles */
+.skills-section .card-title {
+  color: #4e35cf;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Card descriptions */
+.skills-section .card-text {
+  font-size: 0.95rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Skills section responsive design */
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .skills-section img {
+    max-height: 60px;
+  }
+
+  .skills-section .card-title {
+    font-size: 1rem;
+  }
+
+  .skills-section .card-text {
+    font-size: 0.875rem;
+  }
+}

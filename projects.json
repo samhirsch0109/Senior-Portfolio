@@ -1,24 +1,13 @@
 [
   {
-    "modalTitle": "Web Design Year 1 | Sophomore Portfolio ",
-    "bgImage": "imgs/sophportfolio1.png",
-    "images": ["imgs/sophportfolio1.png", "imgs/sophportfolio2.png"],
-    "link": "https://samhirsch0109.github.io/year-1-portfolio/",
-    "description": [
-      " Built using HTML and CSS",
-      " Learned how to create a responsive web layout for multiple devices",
-      " Designed and developed a personal portfolio to showcase Year 1 projects"
-    ]
-  },
-  {
     "modalTitle": "Web Design Year 2 | On My Birthday",
     "bgImage": "imgs/bday1.png",
     "images": ["imgs/bday1.png", "imgs/bday2.png"],
     "link": "https://samhirsch0109.github.io/on-my-birthday/",
     "description": [
-      "✰ Coded with HTML, CSS, and JavaScript",
-      "✰ Interactive birthday-themed page with buttons linking to yearly highlights",
-      "✰ Practiced basic user interaction with JavaScript"
+      " Coded with HTML, CSS, and JavaScript",
+      " Interactive birthday-themed page with buttons linking to yearly highlights",
+      " Practiced basic user interaction with JavaScript"
     ]
   },
   {
@@ -26,7 +15,6 @@
     "bgImage": "imgs/rps.png",
     "images": ["imgs/rps.png"],
     "link": "https://samhirsch0109.github.io/rock--paper--scissors/",
-    "video": ["videos/rps.mp4"],
     "description": [
       "JavaScript-powered Rock, Paper, Scissors game",
       "Features clean and engaging color scheme",
@@ -34,21 +22,9 @@
     ]
   },
   {
-    "modalTitle": "Web Design Year 2 | Halloween Animation ",
-    "bgImage": "imgs/halloanimation.png",
-    "images": ["imgs/halloanimation.png"],
-    "link": "https://samhirsch0109.github.io/tca-1-halloween-animation/",
-    "video": ["videos/animation.mp4"],
-
-    "description": [
-      " Created for TCA 1 using HTML and CSS",
-      " Used keyframes and CSS transitions to animate Halloween-themed elements"
-    ]
-  },
-  {
     "modalTitle": "Web Design Year 2 | Future Me",
     "bgImage": "imgs/future1.png",
-    "images": ["imgs/future1.png", "imgs/future2.png"],
+    "images": ["imgs/future1.png"],
     "link": "https://samhirsch0109.github.io/future-me/",
     "description": [
       "Designed site for a future job",
@@ -58,7 +34,7 @@
   { 
     "modalTitle": "Web Design Year 3 | College Recruitment",
     "bgImage": "imgs/college1.png",
-    "images": ["imgs/college1.png", "imgs/college2.png"],
+    "images": ["imgs/college1.png"],
     "link": "https://samhirsch0109.github.io/College-Recruitment/",
 
     "description": [
@@ -69,7 +45,7 @@
   {
     "modalTitle": "Web Design Year 3 | Trunk or Treat",
     "bgImage": "imgs/trunk1.png",
-    "images": ["imgs/trunk1.png", "imgs/trunk2.png"],
+    "images": ["imgs/trunk1.png"],
     "link": "https://samhirsch0109.github.io/trunk-or-treat/",
     "description": [
       "Designed interactive site for a school Trunk or Treat event",
@@ -81,7 +57,7 @@
   {
     "modalTitle": "Web Design Year 3 | NJIT jQuery Slideshow",
     "bgImage": "imgs/njit1.png",
-    "images": ["imgs/njit1.png", "imgs/njit2.png"],
+    "images": ["imgs/njit1.png"],
     "link": "https://samhirsch0109.github.io/NJITProject1/",
     "description": [
       " Built a custom slideshow using jQuery",
@@ -89,10 +65,20 @@
       "Included captions, transitions, and image fading effects"
     ]
   },
+    {
+    "modalTitle": "Web Design Year 3 | NJIT Movie Gallery",
+    "bgImage": "imgs/njit2.png",
+    "images": ["imgs/njit2.png"],
+    "link": "https://samhirsch0109.github.io/NJIT-Project-2/",
+    "description": [
+      " Built a gallery using JSON files and Vue",
+            "NJIT Project 2"
+    ]
+  },
   {
     "modalTitle": "Web Design Year 3 | Marlboro Track",
     "bgImage": "imgs/track1.png",
-    "images": ["imgs/track1.png", "imgs/track2.png", "imgs/track3.png"],
+    "images": ["imgs/track1.png"],
     "link": "https://samhirsch0109.github.io/Marlboro-Track",
     "description": [
       "Created an informational website for the Marlboro High School Track & Field team for my Work Based Learning Project",

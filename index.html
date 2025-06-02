@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title> Senior Portfolio</title>
   <meta charset="utf-8" />
@@ -13,7 +14,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/skills.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
@@ -43,37 +46,38 @@
     </div>
   </nav>
   <!-- Hero Section -->
-   <header class="hero-container">
+  <header class="hero-container">
 
-        
-        <div class="text-center">
-            <h1 class="hero-heading">SCH</h1>
-            <p class="hero-subheading">Creative Developer & Problem Solver</p>
-            
-            <div class="scroll-indicator">
-                <a href="#welcome" class="hero-arrow-link">
-                    <div class="hero-arrow">↓</div>
-                </a>
-            </div>
-        </div>
-    </header>
+
+    <div class="text-center">
+      <h1 class="hero-heading">SCH</h1>
+      <p class="hero-subheading">Creative Developer & Problem Solver</p>
+
+      <div class="scroll-indicator">
+        <a href="#welcome" class="hero-arrow-link">
+          <div class="hero-arrow">↓</div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <br> <br>
   <!-- Welcome Section -->
-  <section id="welcome" class="welcome-section py-5">
+<section id="welcome" class="welcome-section py-5">
     <div class="container">
       <div class="row align-items-center gy-4">
         <div class="col-md-4 text-center">
-          <img src="imgs/sr.jpeg" class="profile-img img-fluid rounded-circle shadow" alt="Samantha Hirsch" />
+       <div id="move"> <img src="imgs/sr.jpeg" class="profile-img img-fluid rounded-circle shadow" alt="pic of me" /></div> 
         </div>
-        <div class="col-md-8 text-md-start text-center">
+        <div class="col-md-8 text-md-start text-center" id="move">
           <h2 class="fw-bold mb-3">Hi, I'm Samantha Hirsch!</h2>
           <p class="lead mb-0">
-            I'm a graduating senior from Marlboro High School, and I'll be
+        I'm a graduating senior from Marlboro High School, and I'll be
             attending Michigan State University in the fall to major in
             Computer Science, with a possible minor in Business. I enjoy
             solving problems and expressing my creativity through web design
             and development. If you have any questions or would like to
             connect, feel free to reach out! I'm always looking for new ways to learn, improve, and take on creative
-            challenges.
+            challenges. </div>
           </p>
         </div>
       </div>
@@ -83,7 +87,8 @@
   <section id="skills" class="skills-section py-5">
     <div class="container">
       <div class="text-center">
-        <h2 class="text-center fw-bold mb-4">Skills I Have</h2></div>
+        <h2 class="text-center fw-bold mb-4">Skills I Have</h2>
+      </div>
       <div class="row justify-content-center gx-4 gy-4 mt-3">
         <!-- HTML Card -->
         <div class="col-6 col-md-4">
@@ -130,7 +135,7 @@
           <div class="card text-center h-100">
             <div class="card-body">
               <img src="imgs/vue.png" alt="Vue.js Logo" class="img-fluid mb-3" style="max-height: 80px;">
-              <h5 class="card-title">Vue.js</h5>
+              <h5 class="card-title">Vue</h5>
               <p class="card-text">I use Vue for building dynamic and reactive interfaces.</p>
             </div>
           </div>
@@ -148,11 +153,17 @@
       </div>
     </div>
   </section>
+
+  <!--end of skills -->
+
+  
   <!--start of gallery-->
   <section id="vue_app" class="container py-5">
-  <div class="text-center"><h1 class="text-center my-3">{{ pageTitle }}</h1></div>  
+    <div class="text-center">
+      <h1 class="text-center my-3">{{ pageTitle }}</h1>
+    </div>
     <p class="text-center text-muted mb-4 fs-5">
-      Click on any project to view images, videos, and details.
+      Click on any project to view images and view the site.
     </p>
     <div class="parallax-grid">
       <div class="project-container parallax-item" v-for="(project, index) in projects" :key="index">
@@ -175,18 +186,6 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <!-- Carousel -->
-              <div :id="'carouselExample' + index" class="carousel slide mb-4" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <!-- VIDEO SLIDE -->
-                  <template v-if="project.video">
-                    <div class="carousel-item active">
-                      <video controls class="d-block w-100 rounded">
-                        <source :src="project.video" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  </template>
                   <!-- IMAGE SLIDES -->
                   <template v-for="(image, imgIndex) in project.images" :key="'image-' + imgIndex">
                     <div class="carousel-item" :class="{ active: !project.video && imgIndex === 0 }">
@@ -197,26 +196,14 @@
                     </div>
                   </template>
                 </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" :data-bs-target="'#carouselExample' + index"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" :data-bs-target="'#carouselExample' + index"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              
+
               <!-- Toggle Button and Description - OUTSIDE the carousel -->
               <div class="text-center my-3">
                 <button class="btn-toggle-description" @click="project.showDescription = !project.showDescription">
                   {{ project.showDescription ? 'Hide Description' : 'Show Description' }}
                 </button>
               </div>
-              
+
               <!-- Description Section -->
               <div v-if="project.showDescription && project.description && project.description.length" class="mt-3">
                 <div class="text-center mb-2">
@@ -230,13 +217,13 @@
                 </div>
               </div>
             </div>
-            </div>
           </div>
-          </div>
-          </div>
-            </div>
-            </div>
-            </section>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
   <!-- Footer -->
   <footer class="footer" id="contact">
     <div class="footer-container">
@@ -294,4 +281,5 @@
   <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
