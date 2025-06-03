@@ -35,7 +35,7 @@ ul.list-unstyled a {
 }
 
 /* ===========================
-   2. HERO SECTION
+    HERO SECTION
 =========================== */
 
 /* Main hero container with animated gradient */
@@ -206,7 +206,7 @@ ul.list-unstyled a {
 }
 
 /* ===========================
-   3. NAVIGATION
+   NAVIGATION
 =========================== */
 
 /* Main navbar styling */
@@ -337,13 +337,6 @@ ul.list-unstyled a {
 /* ===========================
    4. WELCOME SECTION
 =========================== */
-
-
-/* Adjust this value to match your navbar height */
-#welcome {
-  scroll-margin-top: 200px; /* or whatever your navbar height is */
-}
- 
 
 /* Welcome section layout */
 .welcome-section {
