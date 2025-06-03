@@ -1,7 +1,7 @@
 body {
   margin: 0;
   scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   background-color: #fdfdfd;
   color: #333;
 }
@@ -13,7 +13,7 @@ h2 {
 }
 
 h5 {
-  font-family: "dupincel-variable", sans-serif;
+  font-family: "dupincel-variable";
   color: #7f00b6;
 }
 
@@ -26,11 +26,6 @@ p.lead {
 /* Section spacing */
 section {
   padding: 4rem 0;
-}
-
-/* Scroll offset for fixed navbar */
-section[id] {
-  scroll-margin-top: 80px; /* Adjust this value based on your navbar height */
 }
 
 /* Link styling for lists */
@@ -65,46 +60,6 @@ ul.list-unstyled a {
   100% { background-position: 0% 50%; }
 }
 
-/* Floating particles container */
-.particles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Individual particle styling and animation */
-.particle {
-  position: absolute;
-  width: 3px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  animation: floatUp 8s infinite ease-in-out;
-}
-
-/* Particle floating animation */
-@keyframes floatUp {
-  0% { 
-    transform: translateY(100vh) scale(0);
-    opacity: 0;
-  }
-  10% { 
-    opacity: 1;
-    transform: scale(1);
-  }
-  90% { 
-    opacity: 1;
-  }
-  100% { 
-    transform: translateY(-100px) scale(0);
-    opacity: 0;
-  }
-}
-
 /* Geometric accent elements */
 .hero-container::before {
   content: "";
@@ -113,9 +68,7 @@ ul.list-unstyled a {
   right: 10%;
   width: 120px;
   height: 120px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  animation: slowRotate 20s linear infinite;
   z-index: 0;
 }
 
@@ -126,16 +79,7 @@ ul.list-unstyled a {
   left: 15%;
   width: 80px;
   height: 80px;
-  border: 2px solid rgba(255, 255, 255, 0.08);
-  transform: rotate(45deg);
-  animation: slowRotate 15s linear infinite reverse;
   z-index: 0;
-}
-
-/* Slow rotation animation for geometric elements */
-@keyframes slowRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
 /* Text content positioning */
@@ -229,11 +173,6 @@ ul.list-unstyled a {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Particle speed increase on hover */
-.hero-container:hover .particle {
-  animation-duration: 6s;
 }
 
 /* Hero responsive design */
@@ -399,6 +338,13 @@ ul.list-unstyled a {
    4. WELCOME SECTION
 =========================== */
 
+
+/* Adjust this value to match your navbar height */
+#welcome {
+  scroll-margin-top: 200px; /* or whatever your navbar height is */
+}
+ 
+
 /* Welcome section layout */
 .welcome-section {
  padding: 120px 0 80px 0;}
@@ -451,290 +397,5 @@ ul.list-unstyled a {
     padding-left: 0;
     border-left: none;
     text-align: center;
-  }
-}
-
-/* ===========================
-   6. FOOTER
-=========================== */
-
-/* Main footer styling */
-.footer {
-  background: linear-gradient(to right, #8755e4, #7f00b6);
-  color: #ffffff;
-  padding: 60px 20px 30px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Footer grid container */
-.footer-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Footer branding section */
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Logo container */
-.logo-container {
-  display: flex;
-  justify-content: center;
-}
-
-/* Footer logo */
-.footer-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: aliceblue;
-  padding: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.footer-logo:hover {
-  transform: scale(1.05);
-}
-
-/* Brand text */
-.brand-text {
-  margin-top: 15px;
-  font-size: 14px;
-  color: #f3eaff;
-}
-
-/* Footer section headings */
-.footer-heading {
-  color: #ffffff;
-  margin-bottom: 16px;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 10px;
-  display: inline-block;
-  text-align: center;
-}
-
-/* Decorative underline for footer headings */
-.footer-heading::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-  background-color: #ffffff;
-  width: 40px;
-  margin: 0 auto;
-}
-
-/* Footer navigation lists */
-.footer-nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-nav-list li {
-  margin-bottom: 10px;
-}
-
-/* Footer navigation links */
-.footer-nav-list a {
-  color: #f3eaff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.footer-nav-list a:hover {
-  color: #ffffff;
-  transform: translateX(5px);
-}
-
-/* Contact information list */
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Contact items */
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  color: #ffffff;
-}
-
-.contact-item i {
-  width: 20px;
-  margin-right: 10px;
-  color: #ffffff;
-}
-
-/* Social media icons container */
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-/* Individual social icons */
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  font-size: 18px;
-  transition: all 0.3s ease;
-}
-
-.social-icon:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-3px);
-  color: #ffffff;
-}
-
-/* Footer bottom section */
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 40px;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 13px;
-  color: #e1d4f7;
-}
-
-/* Default centering for footer sections */
-.footer-links,
-.footer-contact,
-.footer-social {
-  text-align: center;
-}
-
-.footer-heading {
-  text-align: center;
-}
-
-/* ===========================
-   FOOTER RESPONSIVE DESIGN
-=========================== */
-
-/* Small screens (576px+) */
-@media (min-width: 576px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
-
-/* Medium screens (768px+) */
-@media (min-width: 768px) {
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px 40px;
-    padding: 0 30px;
-  }
-
-  .footer-brand {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-
-  .footer-links,
-  .footer-contact,
-  .footer-social {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-  }
-
-  .footer-heading::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .footer-nav-list li,
-  .contact-item {
-    display: flex;
-    justify-content: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-/* Large screens (992px+) */
-@media (min-width: 992px) {
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0 40px;
-    padding: 0;
-  }
-
-  .footer-brand,
-  .footer-links,
-  .footer-contact,
-  .footer-social {
-    grid-column: auto;
-    grid-row: auto;
-    width: auto;
-    min-width: 0;
-  }
-
-  .footer-brand {
-    margin-bottom: 0;
-  }
-}
-
-/* Mobile-specific footer adjustments */
-@media (max-width: 767px) {
-  .footer-brand {
-    text-align: center;
-  }
-
-  .contact-item {
-    justify-content: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .brand-text {
-    margin-top: 15px;
-  }
-}
-
-/* Medium screen specific adjustments */
-@media (min-width: 768px) and (max-width: 991px) {
-  .footer-links,
-  .footer-contact,
-  .footer-social {
-    flex-basis: 30%;
-  }
-
-  .brand-text {
-    margin-top: 15px;
   }
 }

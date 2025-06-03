@@ -19,15 +19,19 @@ $(document).ready(function () {
     // Scroll listener
     $(window).on("scroll", checkNavbarVisibility);
 
-    // Smooth scroll
-    $(".hero-arrow-link").on("click", function (e) {
-        e.preventDefault();
+    // Smooth scroll for ALL anchor links with offset
+    $('a[href^="#"]').on("click", function (e) {
         const target = $($(this).attr("href"));
         if (target.length) {
-            $("html, body").animate({ scrollTop: target.offset().top }, 800);
+            e.preventDefault();
+            const offset = 80; // Adjust to match fixed navbar height
+            $("html, body").animate({
+                scrollTop: target.offset().top - offset
+            }, 800);
         }
     });
 });
+
 
 
 const vueApp = Vue.createApp({
