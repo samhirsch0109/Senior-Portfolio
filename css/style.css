@@ -6,6 +6,12 @@ body {
   color: #333;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Global heading styles */
 h2 {
   color: #8755e4;
@@ -33,10 +39,9 @@ ul.list-unstyled a {
   text-decoration: none;
   color: #8755e4 !important;
 }
-
 /* ===========================
-    HERO SECTION
-=========================== */
+ * YOUR ORIGINAL HERO SECTION (UNCHANGED)
+ =========================== */
 
 /* Main hero container with animated gradient */
 .hero-container {
@@ -170,44 +175,185 @@ ul.list-unstyled a {
 /* Smooth fade up animation */
 @keyframes smoothFadeUp {
   to {
-    opacity: 1;
-    transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
   }
 }
 
 /* Hero responsive design */
 @media (max-width: 768px) {
   .hero-heading {
-    font-size: 14vw;
-    letter-spacing: 6px;
+      font-size: 14vw;
+      letter-spacing: 6px;
   }
   .hero-subheading {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
   }
   .hero-arrow {
-    font-size: 2.5rem;
+      font-size: 2.5rem;
   }
   .hero-container::before,
   .hero-container::after {
-    display: none;
+      display: none;
   }
 }
 
 @media (max-width: 480px) {
   .hero-heading {
-    font-size: 16vw;
-    letter-spacing: 4px;
+      font-size: 16vw;
+      letter-spacing: 4px;
   }
   .hero-subheading {
-    font-size: 1rem;
-    letter-spacing: 1px;
+      font-size: 1rem;
+      letter-spacing: 1px;
   }
 }
 
 /* ===========================
-   NAVIGATION
+* FLOATING PARTICLES (ADD THESE)
 =========================== */
+
+/* Floating particles - positioned behind text */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  animation: float 6s ease-in-out infinite;
+  z-index: 0; /* Behind text content */
+  pointer-events: none; /* Don't interfere with clicks */
+}
+
+.particle:nth-child(2) { 
+  width: 80px; 
+  height: 80px; 
+  top: 20%; 
+  left: 10%; 
+  animation-delay: 0s; 
+}
+
+.particle:nth-child(3) { 
+  width: 60px; 
+  height: 60px; 
+  top: 60%; 
+  left: 80%; 
+  animation-delay: 2s; 
+}
+
+.particle:nth-child(4) { 
+  width: 40px; 
+  height: 40px; 
+  top: 40%; 
+  left: 70%; 
+  animation-delay: 4s; 
+}
+
+.particle:nth-child(5) { 
+  width: 100px; 
+  height: 100px; 
+  top: 80%; 
+  left: 20%; 
+  animation-delay: 1s; 
+}
+
+.particle:nth-child(6) { 
+  width: 50px; 
+  height: 50px; 
+  top: 10%; 
+  left: 60%; 
+  animation-delay: 3s; 
+}
+
+.particle:nth-child(7) { 
+  width: 35px; 
+  height: 35px; 
+  top: 30%; 
+  left: 30%; 
+  animation-delay: 5s; 
+}
+
+.particle:nth-child(8) { 
+  width: 70px; 
+  height: 70px; 
+  top: 70%; 
+  left: 60%; 
+  animation-delay: 1.5s; 
+}
+
+.particle:nth-child(9) { 
+  width: 45px; 
+  height: 45px; 
+  top: 15%; 
+  left: 85%; 
+  animation-delay: 2.5s; 
+}
+
+.particle:nth-child(10) { 
+  width: 90px; 
+  height: 90px; 
+  top: 50%; 
+  left: 5%; 
+  animation-delay: 0.5s; 
+}
+
+.particle:nth-child(11) { 
+  width: 25px; 
+  height: 25px; 
+  top: 85%; 
+  left: 75%; 
+  animation-delay: 3.5s; 
+}
+
+.particle:nth-child(12) { 
+  width: 55px; 
+  height: 55px; 
+  top: 5%; 
+  left: 40%; 
+  animation-delay: 4.5s; 
+}
+
+.particle:nth-child(13) { 
+  width: 65px; 
+  height: 65px; 
+  top: 65%; 
+  left: 40%; 
+  animation-delay: 1.8s; 
+}
+
+/* Particle floating animation */
+@keyframes float {
+  0%, 100% { 
+      transform: translateY(0px) rotate(0deg); 
+      opacity: 0.3; 
+  }
+  50% { 
+      transform: translateY(-15px) rotate(180deg); 
+      opacity: 0.6; 
+  }
+}
+
+/* Hide some particles on mobile for performance */
+@media (max-width: 768px) {
+  .particle:nth-child(7),
+  .particle:nth-child(9),
+  .particle:nth-child(11),
+  .particle:nth-child(13) {
+      display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .particle:nth-child(4),
+  .particle:nth-child(6),
+  .particle:nth-child(8),
+  .particle:nth-child(10),
+  .particle:nth-child(12) {
+      display: none;
+  }
+}
+
+
+/* NAVBAR!!!!!! */
 
 /* Main navbar styling */
 .navbar {
