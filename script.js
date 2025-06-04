@@ -58,15 +58,35 @@ $(document).ready(function () {
   
 //code for top button
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 600) {
-        $("#scrollTopBtn").fadeIn();
-    } else {
-        $("#scrollTopBtn").fadeOut();
-    }
-});
+// Back to Top Button functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
 
-$("#scrollTopBtn").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-});
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 700) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
 
+    // Smooth scroll to top when clicked
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Optional: Add keyboard support
+    backToTopBtn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
