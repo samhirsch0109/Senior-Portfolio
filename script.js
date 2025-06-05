@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show/hide button based on scroll position
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 700) {
+        if (window.pageYOffset > 700 ) {
             backToTopBtn.classList.add('show');
         } else {
             backToTopBtn.classList.remove('show');
